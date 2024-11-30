@@ -1,5 +1,6 @@
 package El_juego_del_colgado;
 
+
 import java.util.Scanner;
 
 
@@ -45,6 +46,19 @@ public class El_juego_del_colgado {
 		
 		
 		
+		char[] estadoPalabra = new char [longitudPalabra];
+		
+		for (int i = 0; i < longitudPalabra; i++) {
+		estadoPalabra[i] = '_'; 
+		
+		}
+		
+		int[] intentosRestantes = new int[numJugadores];
+		for (int i = 0; i < numJugadores; i++) {
+		intentosRestantes[i] = 6; 
+		// Para indicar el numero de intentos de los juigadores
+		
+		}
 		
 		
 		
@@ -64,6 +78,7 @@ public class El_juego_del_colgado {
 		
 		
 		
+		}
 		
 	}
 
