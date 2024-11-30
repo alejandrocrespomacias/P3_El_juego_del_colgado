@@ -78,7 +78,28 @@ public class El_juego_del_colgado {
 		}
 		
 		
+		if (!hayIntentos) break;
+
+			for (int jugador = 0; jugador < numJugadores; jugador++) {
+			
 		
+			
+			if (intentosRestantes[jugador] > 0 && !palabraAdivinada) {
+			
+		System.out.println("Jugador " + (jugador + 1) + ", es tu turno.");
+		
+		System.out.println("Palabra actual: " + String.valueOf(estadoPalabra)); 
+		
+		
+		
+		System.out.println("Intentos restantes: " + intentosRestantes[jugador]);
+		
+		System.out.print("Ingresa una letra: ");
+		
+			char letra = scanner.nextLine().toLowerCase().charAt(0); 
+		
+		
+
 		
 		
 		
