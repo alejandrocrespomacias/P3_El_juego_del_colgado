@@ -27,6 +27,44 @@ public class El_juego_del_colgado {
 			}
 		
 		
+		System.out.println("¿Cuántas rondas quieren jugar?");
+		int numRondas = scanner.nextInt();
+		scanner.nextLine(); 
+		
+		
+		int[] puntosJugadores = new int[numJugadores];
+		
+		for (int ronda = 1; ronda <= numRondas; ronda++) {
+			System.out.println("Ronda " + ronda + " de " + numRondas);
+			
+		
+		System.out.println(" Pon la palabra secreta para esta ronda:");
+		String palabraSecreta = scanner.nextLine().toLowerCase(); 
+		
+		int longitudPalabra = palabraSecreta.length();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
