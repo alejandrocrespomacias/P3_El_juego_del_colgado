@@ -17,8 +17,8 @@ public class El_juego_del_colgado {
 
 		
 		System.out.println("¿Cuántos jugadores van a jugar? (mínimo 2): ");
-		int numJugadores = scanner.nextInt();
-		scanner.nextLine();
+			int numJugadores = scanner.nextInt();
+			scanner.nextLine();
 		
 		while (numJugadores < 2) {
 			System.out.println("¡Debe haber al menos 2 jugadores! Inténtelo de nuevo:");
@@ -28,9 +28,9 @@ public class El_juego_del_colgado {
 			}
 		
 		
-		System.out.println("¿Cuántas rondas quieren jugar?");
-		int numRondas = scanner.nextInt();
-		scanner.nextLine(); 
+			System.out.println("¿Cuántas rondas quieren jugar?");
+			int numRondas = scanner.nextInt();
+			scanner.nextLine(); 
 		
 		
 		int[] puntosJugadores = new int[numJugadores];
@@ -39,7 +39,8 @@ public class El_juego_del_colgado {
 			System.out.println("Ronda " + ronda + " de " + numRondas);
 			
 		
-		System.out.println(" Pon la palabra secreta para esta ronda:");
+			System.out.println(" Pon la palabra secreta para esta ronda:");
+			
 		String palabraSecreta = scanner.nextLine().toLowerCase(); 
 		
 		int longitudPalabra = palabraSecreta.length();
@@ -54,8 +55,8 @@ public class El_juego_del_colgado {
 		}
 		
 		int[] intentosRestantes = new int[numJugadores];
-		for (int i = 0; i < numJugadores; i++) {
-		intentosRestantes[i] = 6; 
+			for (int i = 0; i < numJugadores; i++) {
+				intentosRestantes[i] = 6; 
 		// Para indicar el numero de intentos de los juigadores
 		
 		}
@@ -64,13 +65,13 @@ public class El_juego_del_colgado {
 		boolean palabraAdivinada = false;
 
 		
-		while (!palabraAdivinada) {
+			while (!palabraAdivinada) {
 			
 		
 		boolean hayIntentos = false;
 		
 		for (int intentos : intentosRestantes) {
-		if (intentos > 0) {
+			if (intentos > 0) {
 		hayIntentos = true;
 		break;
 		
@@ -123,7 +124,7 @@ public class El_juego_del_colgado {
 		System.out.println("Letra incorrecta.");
 		intentosRestantes[jugador]--; 
 			
-			}
+			
 			
 			
 		if (String.valueOf(estadoPalabra).equals(palabraSecreta)) {
@@ -138,28 +139,53 @@ public class El_juego_del_colgado {
 						}
 					}
 				}
-			}
+			
 			
 		
+		if (!palabraAdivinada) {
+		System.out.println("Nadie adivinó la palabra. Era: " + palabraSecreta);
+			}
+		}
+
+		
+			System.out.println("Puntajes finales:");
+			
+		for (int i = 0; i < numJugadores; i++) {
+		System.out.println("Jugador " + (i + 1) + ": " + puntosJugadores[i] + " puntos.");
+		
+		}
+
+		
+		int maxPuntos = 0;
+		int ganador = -1;
+		
+		for (int i = 0; i < numJugadores; i++) {
+			if (puntosJugadores[i] > maxPuntos) {
+				maxPuntos = puntosJugadores[i];
+				ganador = i; 
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-	
+			}
 		}
 		
-	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+			}
+		}
+		
+	
 
 
