@@ -125,6 +125,21 @@ public class El_juego_del_colgado {
 			
 			}
 			
+			
+		if (String.valueOf(estadoPalabra).equals(palabraSecreta)) {
+		palabraAdivinada = true; 
+		puntosJugadores[jugador]++; 
+		
+		System.out.println("¡Felicidades, Jugador " + (jugador + 1) + "! Has adivinado la palabra.");
+			break; 
+			
+		
+			
+						}
+					}
+				}
+			}
+			
 		
 		
 		
@@ -140,9 +155,11 @@ public class El_juego_del_colgado {
 		
 		
 		
-		
+	
+	
+	
 		}
 		
 	}
 
-}
+
