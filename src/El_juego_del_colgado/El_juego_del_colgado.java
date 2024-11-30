@@ -61,6 +61,23 @@ public class El_juego_del_colgado {
 		}
 		
 		
+		boolean palabraAdivinada = false;
+
+		
+		while (!palabraAdivinada) {
+			
+		
+		boolean hayIntentos = false;
+		
+		for (int intentos : intentosRestantes) {
+		if (intentos > 0) {
+		hayIntentos = true;
+		break;
+		
+			}
+		}
+		
+		
 		
 		
 		
