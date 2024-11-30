@@ -168,23 +168,18 @@ public class El_juego_del_colgado {
 			}
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-	
+		if (ganador != -1) {
+			System.out.println("¡El ganador final es el Jugador " + (ganador + 1) + " con " + maxPuntos + " puntos!");
+			
+			} else {
+				
+			System.out.println("No hay un ganador en este juego.");
+			
+					}
+				}
+
 			}
-		}
+		
 		
 	
 
