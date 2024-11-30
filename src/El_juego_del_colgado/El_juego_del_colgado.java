@@ -99,7 +99,32 @@ public class El_juego_del_colgado {
 			char letra = scanner.nextLine().toLowerCase().charAt(0); 
 		
 		
+		boolean acierto = false;
+			
+			for (int i = 0; i < longitudPalabra; i++) {
+				if (palabraSecreta.charAt(i) == letra) {
+					estadoPalabra[i] = letra; 
+					acierto = true;
+			
+				}
+			}
+			
 
+			
+			if (acierto) { 
+				
+				System.out.println("¡Correcto!");
+			}
+			
+		} else {
+						
+		}
+			
+		System.out.println("Letra incorrecta.");
+		intentosRestantes[jugador]--; 
+			
+			}
+			
 		
 		
 		
